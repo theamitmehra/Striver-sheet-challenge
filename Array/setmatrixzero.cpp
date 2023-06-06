@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <unordered_set>
-
-using namespace std;
+#include "code.cpp"
 
 void setZeroes(vector<vector<int>>& matrix) {
     int rows = matrix.size();

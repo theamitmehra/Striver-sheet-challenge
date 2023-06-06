@@ -1,36 +1,30 @@
-#include <iostream>
-#include <vector>
+#include "code.cpp"
 
-using namespace std;
-
-int maxProfit(vector<int>& prices) {
+int maximumProfit(vector<int> &prices){
+    // Write your code here.
     int n = prices.size();
-    if (n == 0) {
-        return 0;
-    }
+    if(n == 0) return 0;
 
-    int minPrice = prices[0];
-    int maxProfit = 0;
+    int minimumPrice = prices[0];
+    int maximumProfit = 0;
 
-    for (int i = 1; i < n; i++) {
-        if (prices[i] < minPrice) {
-            minPrice = prices[i];
+    for (auto element : prices) {
+        if (element < minimumPrice) {
+            minimumPrice = element;
         } else {
-            int profit = prices[i] - minPrice;
-            if (profit > maxProfit) {
-                maxProfit = profit;
+            int profit = element - minimumPrice;
+            if (profit > maximumProfit) {
+                maximumProfit = profit;
             }
         }
     }
 
-    return maxProfit;
+    return maximumProfit;
 }
 
-int main() {
-    // Example usage
-    vector<int> prices = {7, 1, 5, 3, 6, 4};
-    int maxProfitValue = maxProfit(prices);
-    cout << "Maximum profit: " << maxProfitValue << endl;
-
+int main(int argc, char const *argv[])
+{
+    
     return 0;
 }
+
