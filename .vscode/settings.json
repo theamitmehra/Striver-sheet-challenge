@@ -1,6 +1,8 @@
 {
-    "files.associations": {
-        "vector": "cpp",
-        "bit": "cpp"
-    }
+    "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE",
+        "__cplusplus=201703L"
+    ]    
 }
