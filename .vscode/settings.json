@@ -4,5 +4,9 @@
         "UNICODE",
         "_UNICODE",
         "__cplusplus=201703L"
-    ]    
+    ],
+    "files.associations": {
+        "chrono": "cpp",
+        "cmath": "cpp"
+    }
 }
