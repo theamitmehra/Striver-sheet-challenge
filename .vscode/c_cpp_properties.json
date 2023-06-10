@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/lib/gcc/x86_64-w64-mingw32/10.2.0/include/c++/x86_64-w64-mingw32"
             ],
             "defines": [
                 "_DEBUG",
@@ -11,9 +12,9 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "C:/ProgramData/chocolatey/bin/gcc.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "C:/ProgramData/chocolatey/bin/g++.exe",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "intelliSenseMode": "clang-x64"
         }
     ],
